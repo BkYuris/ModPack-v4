@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <project>
 	<!-- _________________________ Application Settings _________________________ -->
-gsgsgsgsgsgsgsgsggssgsggssg
+
 	<app title="ModPack Pt.4 FNF" file="PsychEngine" packageName="com.monika.modpack4" package="com.monika.modpack4" main="Main" version="0.2.7" company="ShadowMario" />
 
 	<!--Switch Export with Unique ApplicationID and Icon-->
