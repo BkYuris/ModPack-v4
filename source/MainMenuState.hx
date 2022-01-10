@@ -24,23 +24,27 @@ import editors.MasterEditorMenu;
 import WeekData;
 import flixel.util.FlxTimer;
 import flixel.tweens.FlxTween;
+import flixel.input.keyboard.FlxKey;
 
 using StringTools;
 
 class MainMenuState extends MusicBeatState
 {
-	public static var psychEngineVersion:String = '0.4.2'; //This is also used for Discord RPC
+	public static var psychEngineVersion:String = '0.5'; //This is also used for Discord RPC
 	public static var curSelected:Int = 0;
 
 	var menuItems:FlxTypedGroup<FlxSprite>;
 	private var camGame:FlxCamera;
 	private var camAchievement:FlxCamera;
-	
-	var optionShit:Array<String> = ['MENUPLAY', 'FREEPLAY', 'OPTIONS', 'CREDITS'];
-
+	var optionShit:Array<String> = [
+		'story_mode',
+		'freeplay',
+		'credits',
+		'options'
+	];
 	var camFollow:FlxObject;
 	var camFollowPos:FlxObject;
-
+    var debugKeys:Array<FlxKey>;
 	var cg:FlxSprite;
 
 	override function create()
@@ -245,40 +249,15 @@ class MainMenuState extends MusicBeatState
 
 						switch (daChoice)
 						{
-							case 'MENUPLAY':
-								var songArray:Array<String> = [];
-								var leWeek:Array<Dynamic> = WeekData.weeksLoaded.get(WeekData.weeksList[0]).songs;
-								for (i in 0...leWeek.length) {
-									songArray.push(leWeek[i][0]);
+							case 'story_mode':
+										MusicBeatState.switchState(new StoryMenuState());
+									case 'freeplay':
+										MusicBeatState.switchState(new FreeplayState());
+									case 'credits':
+										MusicBeatState.switchState(new CreditsState());
+									case 'options':
+										MusicBeatState.switchState(new options.OptionsState());
 								}
-					
-								// Nevermind that's stupid lmao
-								PlayState.storyPlaylist = songArray;
-								PlayState.isStoryMode = true;
-					
-								var diffic = CoolUtil.difficultyStuff[2][1];
-								if(diffic == null) diffic = '';
-					
-								PlayState.storyDifficulty = 2;
-					
-								PlayState.SONG = Song.loadFromJson(PlayState.storyPlaylist[0].toLowerCase() + diffic, PlayState.storyPlaylist[0].toLowerCase());
-								PlayState.storyWeek = 0;
-								PlayState.campaignScore = 0;
-								PlayState.campaignMisses = 0;
-								new FlxTimer().start(1, function(tmr:FlxTimer)
-								{
-									LoadingState.loadAndSwitchState(new PlayState(), true);
-									FreeplayState.destroyFreeplayVocals();
-								});
-							case 'FREEPLAY':
-								MusicBeatState.switchState(new FreeplayState());
-							case 'awards':
-								MusicBeatState.switchState(new AchievementsMenuState());
-							case 'CREDITS':
-								MusicBeatState.switchState(new CreditsState());
-							case 'OPTIONS':
-								MusicBeatState.switchState(new OptionsState());
-						}
 					});
 			}
 			else if (FlxG.keys.anyJustPressed(debugKeys) #if mobileC || _virtualpad.button7.justPressed #end)
