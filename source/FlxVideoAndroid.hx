@@ -11,10 +11,6 @@ import openfl.media.Sound;
 import flixel.FlxSprite;
 import flixel.FlxG;
 import openfl.Lib;
-import flixel.text.FlxText;
-import flixel.FlxG;
-import flixel.FlxBasic;
-import extension.webview.WebView;
 #if sys
 import sys.FileSystem;
 import sys.io.File;
