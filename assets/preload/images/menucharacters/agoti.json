@@ -1,0 +1,10 @@
+{
+	"idle_anim": "Agoti_Idle",
+	"image": "agoti",
+	"position": [
+		170,
+		190
+	],
+	"scale": 0.45,
+	"confirm_anim": "M Dad Idle"
+}
