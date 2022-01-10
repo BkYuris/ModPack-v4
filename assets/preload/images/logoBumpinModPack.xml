@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="logoBumpin.png">
+	<!-- Created with Adobe Animate version 22.0.0.93 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="ModPack v4 Bumpin0000" x="14" y="14" width="778" height="510" frameX="-19" frameY="-12" frameWidth="818" frameHeight="536"/>
+	<SubTexture name="ModPack v4 Bumpin0001" x="807" y="14" width="818" height="536"/>
+	<SubTexture name="ModPack v4 Bumpin0002" x="807" y="14" width="818" height="536"/>
+	<SubTexture name="ModPack v4 Bumpin0003" x="14" y="565" width="795" height="521" frameX="-11" frameY="-7" frameWidth="818" frameHeight="536"/>
+	<SubTexture name="ModPack v4 Bumpin0004" x="14" y="565" width="795" height="521" frameX="-11" frameY="-7" frameWidth="818" frameHeight="536"/>
+	<SubTexture name="ModPack v4 Bumpin0005" x="824" y="565" width="788" height="516" frameX="-15" frameY="-9" frameWidth="818" frameHeight="536"/>
+	<SubTexture name="ModPack v4 Bumpin0006" x="824" y="565" width="788" height="516" frameX="-15" frameY="-9" frameWidth="818" frameHeight="536"/>
+	<SubTexture name="ModPack v4 Bumpin0007" x="824" y="565" width="788" height="516" frameX="-15" frameY="-9" frameWidth="818" frameHeight="536"/>
+	<SubTexture name="ModPack v4 Bumpin0008" x="824" y="565" width="788" height="516" frameX="-15" frameY="-9" frameWidth="818" frameHeight="536"/>
+	<SubTexture name="ModPack v4 Bumpin0009" x="824" y="565" width="788" height="516" frameX="-15" frameY="-9" frameWidth="818" frameHeight="536"/>
+	<SubTexture name="ModPack v4 Bumpin0010" x="824" y="565" width="788" height="516" frameX="-15" frameY="-9" frameWidth="818" frameHeight="536"/>
+	<SubTexture name="ModPack v4 Bumpin0011" x="824" y="565" width="788" height="516" frameX="-15" frameY="-9" frameWidth="818" frameHeight="536"/>
+	<SubTexture name="ModPack v4 Bumpin0012" x="824" y="565" width="788" height="516" frameX="-15" frameY="-9" frameWidth="818" frameHeight="536"/>
+	<SubTexture name="ModPack v4 Bumpin0013" x="824" y="565" width="788" height="516" frameX="-15" frameY="-9" frameWidth="818" frameHeight="536"/>
+	<SubTexture name="ModPack v4 Bumpin0014" x="824" y="565" width="788" height="516" frameX="-15" frameY="-9" frameWidth="818" frameHeight="536"/>
+</TextureAtlas>
