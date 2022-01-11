@@ -25,14 +25,14 @@ class FlxVideoAndroid extends FlxSprite
 	public var endcallback:Void->Void = null;
 	public var startcallback:Void->Void = null;
 	public var sound:FlxSound;
-        public var soundMultiplier:Float = 1;
-        public var prevSoundMultiplier:Float = 1;
-        public var videoFrames:Int = 0;
-        public var doShit:Bool = false;
-        public var io:WebmIo;
-        public var altSource:String;
+    public var soundMultiplier:Float = 1;
+    public var prevSoundMultiplier:Float = 1;
+    public var videoFrames:Int = 0;
+    public var doShit:Bool = false;
+    public var io:WebmIo;
+    public var altSource:String;
     
-        public var stopped:Bool = false;
+    public var stopped:Bool = false;
 	public var restarted:Bool = false;
 	public var started:Bool = false;
 	public var ended:Bool = false;
@@ -105,7 +105,6 @@ class FlxVideoAndroid extends FlxSprite
         
                 if (frameSkipLimit != -1)
 		{
-			videoplayer.SKIP_STEP_LIMIT = frameSkipLimit;	
 		}
 		
 		if (ownCamera) {
@@ -176,7 +175,6 @@ class FlxVideoAndroid extends FlxSprite
 		if (useSound)
 		{
 			var wasFuckingHit = videoplayer.wasHitOnce;
-			soundMultiplier = videoplayer.renderedCount / videoFrames;
 			
 			if (soundMultiplier > 1)
 			{
