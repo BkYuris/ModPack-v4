@@ -174,7 +174,6 @@ class FlxVideoAndroid extends FlxSprite
 		
 		if (useSound)
 		{
-			var wasFuckingHit = videoplayer.wasHitOnce;
 			
 			if (soundMultiplier > 1)
 			{
